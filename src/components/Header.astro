@@ -4,7 +4,6 @@ import logo from "../assets/logo.png";
 
 <header>
   <nav class="navbar h-100">
-    <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src={logo} alt="trabook logo" />
       </a>
@@ -32,16 +31,15 @@ import logo from "../assets/logo.png";
           <a class="nav-link accent-text" href="#">Login</a>
         </li>
         <li class="nav-item fs-6">
-          <button class="d-inline-flex py-1 px-4 border rounded-2 btn-sign">Sign Up</button>
+          <button class="d-inline-flex py-1 px-4 rounded-2 btn-sign">Sign Up</button>
         </li>
       </ul>
-    </div>
   </nav>
 </header>
 
 <style>
   header {
-    width: 920px;
+    max-width: 920px;
     height: 80px;
     margin: auto;
   }
