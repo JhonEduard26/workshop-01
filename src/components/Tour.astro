@@ -1,0 +1,65 @@
+---
+import tour1 from "../assets/image-4.png";
+import tour2 from "../assets/image-5.png";
+import tour3 from "../assets/image-6.png";
+import CardTour from "./CardTour.astro";
+---
+
+<section id="tour">
+  <div class="row text-center w-50 mx-auto">
+    <div class="col">
+      <h2 class="fw-semibold mb-4">
+        Best <span class="accent-text">vacation plan</span>
+      </h2>
+      <p class="text-muted tour-paragraph">
+        Plan your perfect vacation with our travel agency. Choose among hundreds
+        of all-inclusive offers!
+      </p>
+    </div>
+  </div>
+  <div class="row gap-4 justify-content-center">
+    <CardTour
+      img={tour1}
+      city="Rome, Italy"
+      days="7 Days Trip"
+      rating={4.8}
+      priceTicket={5.42}
+    />
+
+    <CardTour
+      img={tour2}
+      city="London, UK"
+      days="7 Days Trip"
+      rating={4.7}
+      priceTicket={2.42}
+    />
+
+    <CardTour
+      img={tour3}
+      city="Osaka, Japan"
+      days="10 Days Trip"
+      rating={4.8}
+      priceTicket={5.42}
+    />
+  </div>
+</section>
+
+<style>
+  #tour {
+    max-width: 920px;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    background-color: var(--bg);
+  }
+  .tour-paragraph {
+    margin-bottom: 4rem;
+    text-wrap: balance;
+  }
+  .card {
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  .card-body p {
+    font-size: 0.85rem;
+  }
+</style>

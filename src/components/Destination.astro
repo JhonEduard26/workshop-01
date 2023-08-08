@@ -1,0 +1,77 @@
+---
+import madridImg from "../assets/image-1.png";
+import parisImg from "../assets/image-2.png";
+import londonImg from "../assets/image-3.png";
+import CardDest from "./CardDest.astro";
+---
+
+<section id="destination">
+  <div class="row text-center w-50 mx-auto">
+    <div class="col">
+      <h2 class="fw-semibold mb-4">
+        Exclusive <span class="accent-text">deals &amp; discounts</span>
+      </h2>
+      <p class="text-muted destination-paragraph">
+        Discover our fantastic early booking discounts &amp; start planning your
+        journey
+      </p>
+    </div>
+  </div>
+  <div class="row gap-4 justify-content-center">
+    <CardDest
+      img={madridImg}
+      city="Madrid"
+      country="Spain"
+      rating={4.8}
+      oldPrice={950}
+      newPrice={850}
+    />
+
+    <CardDest
+      img={londonImg}
+      city="London"
+      country="UK"
+      rating={4.5}
+      oldPrice={850}
+      newPrice={750}
+    />
+
+    <CardDest
+      img={parisImg}
+      city="Paris"
+      country="France"
+      rating={4.4}
+      oldPrice={699}
+      newPrice={599}
+    />
+
+    <CardDest
+      img={londonImg}
+      city="London"
+      country="UK"
+      rating={4.8}
+      oldPrice={950}
+      newPrice={850}
+    />
+  </div>
+</section>
+
+<style>
+  #destination {
+    max-width: 920px;
+    margin: 4rem auto;
+    padding: 4rem 0;
+    background-color: var(--bg);
+  }
+  .destination-paragraph {
+    margin-bottom: 4rem;
+    text-wrap: balance;
+  }
+  .card {
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  .card-body p {
+    font-size: 0.85rem;
+  }
+</style>
