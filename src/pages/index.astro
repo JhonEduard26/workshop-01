@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Home from "../components/Home.astro";
+import About from "../components/About.astro";
 import Footer from "../components/Footer.astro";
 ---
 
@@ -9,6 +10,7 @@ import Footer from "../components/Footer.astro";
   <Header />
   <main>
 		<Home />
+		<About />
   </main>
 </Layout>
 <Footer />
@@ -17,7 +19,7 @@ import Footer from "../components/Footer.astro";
   main {
     margin: auto;
     padding: 6rem 0;
-    width: 920px;
-    max-width: calc(100% - 2rem);
+		max-width: 100%;
+		overflow-x: hidden;
   }
 </style>

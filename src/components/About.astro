@@ -1,0 +1,62 @@
+---
+import group3 from '../assets/group-3.png'
+import group2 from '../assets/group-2.png'
+import group1 from '../assets/group-1.png'
+---
+
+<section id="about">
+  <div class="row text-center w-50 mx-auto">
+      <div class="col">
+      <h3 class="fw-semibold mb-4">Things you need <span class="accent-text">to do</span></h3>
+      <p class="text-muted about-paragraph">
+        We ensure that you&apos;ll embark on a perfectly planned, safe vacation
+        at a price you can afford.
+      </p>
+    </div>
+  </div>
+  <div class="row gap-4 justify-content-center">
+    <div class="card" style="width: 18rem;">
+      <img width="36" height="36" src={group3} alt="card image" style="margin: 16px 0 0 16px;">
+      <div class="card-body">
+        <h5 class="card-title fw-semibold">Sign up</h5>
+        <p class="card-text text-muted">Complete all the work associated with planning and processing</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img width="36" height="36" src={group1} alt="card image" style="margin: 16px 0 0 16px;">
+      <div class="card-body">
+        <h5 class="card-title fw-semibold">Worth of Money</h5>
+        <p class="card-text text-muted">After succesfully access then book from exclusive deals &amp; pricing</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img width="36" height="36" src={group2} alt="card image" style="margin: 16px 0 0 16px;">
+      <div class="card-body">
+        <h5 class="card-title fw-semibold">Exciting travel</h5>
+        <p class="card-text text-muted">Start and explore a wide range of exciting travel experience</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #about {
+    margin: 4rem auto;
+    padding: 4rem 0;
+    background-color: var(--bg-alt);
+  }
+  .about-paragraph {
+    margin-bottom: 4rem;
+    text-wrap: balance;
+  }
+  .card {
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body p {
+    font-size: 0.85rem;
+  }
+</style>
