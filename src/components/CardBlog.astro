@@ -1,0 +1,23 @@
+---
+interface Props {
+  img: string;
+  title: string;
+  date: string;
+}
+
+const { img, title, date } = Astro.props;
+---
+
+<div class="col card p-0">
+  <img class="card-img-top" src={img} alt="card image" />
+  <div class="card-body">
+    <h5 class="card-title fw-semibold font-small">{title}</h5>
+    <p class="card-text text-muted font-small">{date}</p>
+  </div>
+</div>
+
+<style>
+  .font-small {
+    font-size: 0.85rem;
+  }
+</style>
