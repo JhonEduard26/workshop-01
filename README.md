@@ -2,12 +2,16 @@
 
 Workshop 01 - HTML, CSS, BOOSTRAP
 
-## 🧞 Comandos
+Desplegado en netlify:
 
-All commands are run from the root of the project, from a terminal:
+https://workshop-01-peaku.netlify.app/
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Instalar dependencias                            |
-| `npm run dev`             | Iniciar el servidor local en `localhost:3000`    |
-| `npm run build`           | Build your production site to `./dist/`          |
+## ✨ Enlaces
+
+- [📚 Repositorio](https://github.com/JhonEduard26/workshop-01)
+- [📚 Sitio Web](https://workshop-01-peaku.netlify.app/)
+
+## 😀 Autores
+
+- [Jhon Eduard](https://github.com/JhonEduard26)
+- Jhonny Hernandez
